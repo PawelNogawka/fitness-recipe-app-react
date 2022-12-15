@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fitness-recipe-app-react/static/css/main.eb75ef1c.css",
-    "main.js": "/fitness-recipe-app-react/static/js/main.7ae6607c.js",
+    "main.js": "/fitness-recipe-app-react/static/js/main.9f53f10d.js",
     "static/media/hero-big.jpg": "/fitness-recipe-app-react/static/media/hero-big.f58c4c0d52ed9ae99298.jpg",
     "static/media/hero-small.jpg": "/fitness-recipe-app-react/static/media/hero-small.b2114f6b731557aa733f.jpg",
     "static/media/vegetables.jpg": "/fitness-recipe-app-react/static/media/vegetables.5bd7b52422a3ac7ff949.jpg",
@@ -13,10 +13,10 @@
     "static/media/drinks.jpg": "/fitness-recipe-app-react/static/media/drinks.a2c9fb75f424f36e0341.jpg",
     "index.html": "/fitness-recipe-app-react/index.html",
     "main.eb75ef1c.css.map": "/fitness-recipe-app-react/static/css/main.eb75ef1c.css.map",
-    "main.7ae6607c.js.map": "/fitness-recipe-app-react/static/js/main.7ae6607c.js.map"
+    "main.9f53f10d.js.map": "/fitness-recipe-app-react/static/js/main.9f53f10d.js.map"
   },
   "entrypoints": [
     "static/css/main.eb75ef1c.css",
-    "static/js/main.7ae6607c.js"
+    "static/js/main.9f53f10d.js"
   ]
 }
