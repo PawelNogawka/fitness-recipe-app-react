@@ -1,0 +1,50 @@
+@import "./variables";
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  &__label {
+    display: block;
+    color: $text-dark;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid $gray-border;
+    border-radius: $radius-big;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    transition: box-shadow 0.3s;
+
+    &::placeholder {
+      color: rgba(105, 109, 117, 0.8);
+      text-transform: capitalize;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(166, 74, 201, 0.5);
+    }
+
+    &--padding-x {
+      padding: 1rem 4rem;
+    }
+
+    &:focus:invalid ~ .input-box__error {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__error {
+    display: block;
+    margin-top: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 1.4rem;
+    color: $error;
+  }
+}

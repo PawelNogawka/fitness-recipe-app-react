@@ -1,0 +1,49 @@
+@import './variables';
+
+
+.bmi-calculator{
+  width: 100%;
+  max-width:43rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  box-shadow: $card-shadow-spread;
+  border-radius: $radius-small;
+
+  &__title{
+    margin-bottom: 2.3rem;
+    font-size:2.8rem;
+    color:$text-dark;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__btns{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color:$text-dark;
+    font-size:1.8rem;
+  }
+
+  &__result-info{
+    font-size:1.5rem;
+  }
+}

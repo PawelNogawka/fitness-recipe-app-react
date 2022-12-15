@@ -1,0 +1,160 @@
+@import './variables';
+
+
+.bmr-calculator{
+    flex: 1 1 30rem;
+    width: 100%;
+  max-width:43rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  box-shadow: $card-shadow-spread;
+  border-radius: $radius-small;
+
+  &__title{
+    margin-bottom: 2.3rem;
+    font-size:2.8rem;
+    color:$text-dark;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__btns{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  &__result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    font-weight: 400;
+    color:$text-dark;
+    font-size:1.8rem;
+
+  }
+
+  &__result-info{
+    font-size:1.5rem;
+  }
+
+  &__box{
+    position: relative;
+  }
+
+  &__select{
+    background: 0;
+    width: 100%;
+    border: 1px solid $gray-border;
+    border-radius: $radius-big;
+    padding: 1rem 2rem ;
+    padding-right: 5rem;
+    font-size: 1.6rem;
+    transition: box-shadow .3s;
+    -moz-appearance:none;
+    -webkit-appearance:none; 
+    appearance:none;
+
+    &::placeholder {
+      color: rgba(105, 109, 117, 0.8);
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(166, 74, 201, .5);
+    }
+
+    option{
+        text-transform: capitalize;
+        color: $text-dark;
+    }
+
+  }
+
+  &__angle-down{
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(50%);
+    z-index:100;
+    pointer-events: none;
+  }
+
+  &__checkbox-container{
+    display: flex;
+    gap: 1.8rem;
+  }
+
+  &__row{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  &__checkbox-title{
+    display: block;
+    margin-bottom: -1.3rem;
+    color: $text-dark;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  &__checkbox-gender{
+   color:$text-light;
+   text-transform: capitalize;
+
+  }
+
+  &__check{
+    position: relative;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius:.3rem;
+    border:.1rem solid $gray-border;
+    background-color: #fff;
+
+   
+        &::after {
+            content: "";
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateZ(40deg) scale(10);
+            width: 0.5rem;
+            height: 1.5rem;
+            border-right: 0.4rem solid #fff;
+            border-bottom: 0.4rem solid #fff;
+            opacity: 0;
+            transition: all 0.4s ease;
+          }
+    
+}
+
+  &__input:checked ~ &__check{
+    background-color:$main;
+  }
+
+  &__input:checked ~ &__check::after{
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+    opacity: 1;
+  }
+
+  &__result{
+    color:$text-dark;
+    font-size:1.8rem;
+  }
+
+  
+
+}

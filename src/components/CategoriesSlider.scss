@@ -1,0 +1,37 @@
+@import "./variables";
+
+.categories-slider {
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    padding: 1.2rem;
+    background: 0;
+    border: 0;
+    font-size: 2rem;
+    color: $text-dark;
+    cursor: pointer;
+    bottom: -7rem;
+
+    &--next {
+      right: 0;
+    }
+
+    &--prev {
+      left: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 5rem;
+    overflow-x: auto;
+    transition: all 3s ease;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+  }
+}

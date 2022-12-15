@@ -1,0 +1,42 @@
+@import "./variables";
+
+.bmi {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 13rem;
+  }
+
+  &__content{
+    flex: 1 1 30rem;
+  }
+
+  &__text{
+    margin-bottom: 5rem;
+    color: $text-light;
+    text-indent: 1rem;
+
+  }
+
+  &__features{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+
+  &__feature{
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+  }
+
+  &__feature-icon{
+     color: $main;
+     font-size:2rem;
+  }
+
+  &__feature-info{
+    color: $text-light;
+  }
+
+}

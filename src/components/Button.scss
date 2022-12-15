@@ -1,0 +1,65 @@
+@import "./variables";
+
+.btn {
+  padding: 1rem 3rem;
+  display: block;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  border-radius: $radius-big;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  transition: all 0.4s ease;
+  transform: scale(1);
+
+  &:focus {
+    animation: scale .7s ease;
+  }
+  &:hover {
+    background-color: $hover;
+  }
+
+  &--fill {
+    background-color: $main;
+    color: $basic;
+  }
+
+  &--outline {
+    background-color: $basic;
+    color: $main;
+    border: 1px solid $main;
+
+    &:hover {
+      color:$basic
+    }
+  }
+
+  &--clean {
+    margin-top: 1.7rem;
+    background-color: transparent;
+    color: $main;
+    text-decoration: underline;
+    &:hover {
+      color:$basic
+    }
+  }
+
+  &--width-100 {
+    width: 100%;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

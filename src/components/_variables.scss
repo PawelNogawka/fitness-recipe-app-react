@@ -1,0 +1,44 @@
+//colors
+
+$main: #ba68c8;
+$gray-section: #f0f0f0;
+$gray-border: #cdd2d7;
+$text-dark: #3e4555;
+$text-light: #696d75;
+$text-light-2:rgba(105, 109, 117, 0.8);
+$basic:#fff;
+$error:#ef5350;
+$succes:#4CAF50;
+$hover:#9c27b0;
+
+// gradients
+
+$linear-dark: linear-gradient(
+
+  rgba(0, 0, 0, 0.8) ,
+  rgba(0, 0, 0, 0.5) 
+);
+
+$linear-light:linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.50) 0%,
+    rgba(0, 0, 0, 0.50) 100%
+  );
+
+  $linear-nav:linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.80) 100%,
+    rgba(0, 0, 0, 0.80) 100%
+  );
+
+
+// border-radius
+
+$radius-big:3rem;
+$radius-small:1rem;
+
+// box-shadow
+
+$card-shadow-min:  rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+$card-shadow-spread:rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; 
+$nav-shadow:rgba(0, 0, 0, 0.1) 0px 4px 12px;

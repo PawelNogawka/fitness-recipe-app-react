@@ -1,0 +1,96 @@
+@import "./components/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 7rem;
+}
+
+body {
+  font-size: 1.6rem;
+  
+}
+
+p {
+  line-height: 160%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.api-error-message,
+.api-loading-message{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size:3rem;
+  text-align: center;
+}
+
+.api-error-message{
+  color:$error;
+}
+
+
+.api-loading-message{
+  color:$main;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+    margin-bottom: 3.4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: $text-dark;
+}
+
+
+.form__error{
+  margin-top: -3rem;
+  color:$error;
+  font-size:1.5rem;
+  opacity:0;
+  visibility: hidden;
+
+  &--show{
+    opacity:1;
+    visibility: visible;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 0;
+  }
+}
+
+
+@media(max-width:350px){
+  html{
+    font-size:57%;
+  }
+}
+

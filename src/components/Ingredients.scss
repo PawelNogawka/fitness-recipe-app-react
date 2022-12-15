@@ -1,0 +1,53 @@
+@import "./variables";
+
+.ingredients {
+    flex: 1 1 34rem;
+
+  &__title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: $text-dark;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img{
+        border-radius: $radius-small;
+        object-fit: cover;
+    }
+  }
+
+
+
+  &__ingredient {
+    color: $text-dark;
+    font-size: 1.7rem;
+
+    span {
+      color: $text-light;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+
+
+@media(min-width:992px){
+    .ingredients{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

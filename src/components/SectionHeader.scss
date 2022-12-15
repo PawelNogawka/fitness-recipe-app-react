@@ -1,0 +1,27 @@
+@import "./variables";
+
+.section-header {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 1.4rem;
+    font-size: min(7.5vw, 4.2rem);
+    color: $text-dark;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    color: $text-light;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    margin-bottom: 12rem;
+  }
+}

@@ -1,0 +1,44 @@
+@import "./variables";
+
+.nutrition {
+  flex: 1 1 34rem;
+
+  &__title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: $text-dark;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+  }
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: $text-dark;
+    text-transform: capitalize;
+  }
+  &__amount {
+    color: $text-light;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nutrition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

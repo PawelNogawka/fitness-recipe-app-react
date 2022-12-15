@@ -1,0 +1,20 @@
+@import './variables';
+
+
+.footer{
+    padding: 3rem 0;
+    background-color: $gray-section;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            text-transform: capitalize;
+            font-weight: 500;
+            color:$text-dark;
+            font-size:1.8rem;
+        }
+    }
+}

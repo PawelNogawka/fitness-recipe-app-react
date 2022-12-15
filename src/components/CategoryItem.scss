@@ -1,0 +1,45 @@
+@import "./variables";
+
+.category-item {
+  flex-shrink: 0;
+  width: 27rem;
+  height: 40rem;
+  border-radius: $radius-small;
+  box-shadow: $card-shadow-min;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration: none;
+
+
+  &:nth-of-type(1) {
+    background-image: $linear-light, url("../assets/chicken.jpg");
+  }
+  &:nth-of-type(2) {
+    background-image: $linear-light, url("../assets/fish.jpg");
+  }
+  &:nth-of-type(3) {
+    background-image: $linear-light, url("../assets/vegan.jpg");
+  }
+  &:nth-of-type(4) {
+    background-image: $linear-light, url("../assets/vegetarian.jpg");
+  }
+  &:nth-of-type(5) {
+    background-image: $linear-light, url("../assets/fruits.jpg");
+  }
+  &:nth-of-type(6) {
+    background-image: $linear-light, url("../assets/vegetables.jpg");
+  }
+  &:nth-of-type(7) {
+    background-image: $linear-light, url("../assets/drinks.jpg");
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 3rem;
+    color: $basic;
+  }
+}
