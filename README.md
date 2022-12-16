@@ -3,7 +3,7 @@
 
 You can download or clone this application and type "npm start"
 
-Or visiy live site : https://fitness-recipe-app-react.netlify.app/
+Or visit live site : https://fitness-recipe-app-react.netlify.app/
 
 I created this simple app for learning purposes.
 
